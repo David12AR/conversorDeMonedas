@@ -1,0 +1,8 @@
+{
+  "base_code": "USD",
+  "result": "success",
+  "target_code": "ARS",
+  "conversion_rate": 1184.33,
+  "conversion_result": 47373.2,
+  "amount": 0.0
+}
