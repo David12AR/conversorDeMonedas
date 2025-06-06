@@ -1,6 +1,6 @@
 {
   "base_code": "COP",
-  "result": "success",
-  "target_code": "EUR",
-  "conversion_rate": 2.1448E-4
+  "target_code": "USD",
+  "conversion_result": 0.0097492,
+  "monto": 40.0
 }

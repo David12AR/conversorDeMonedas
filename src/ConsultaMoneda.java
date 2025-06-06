@@ -1,4 +1,6 @@
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,7 +20,15 @@ URI direccion = URI.create("https://v6.exchangerate-api.com/v6/5d6ab2953202ce74f
     try{
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
-        return new Gson().fromJson(response.body(), Moneda.class);
+        JsonObject json = JsonParser.parseString(response.body()).getAsJsonObject();
+
+        return new Moneda(
+                json.get("base_code").getAsString(),
+                json.get("target_code").getAsString(),
+                json.get("conversion_result").getAsDouble(),
+                monto
+
+        );
     } catch (Exception e) {
         throw new RuntimeException("No encontré esa divisa");
     }
