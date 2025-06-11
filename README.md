@@ -41,7 +41,7 @@ Este proyecto desarrollado en **Java** y conectado a la **ExchangeRate API**, pe
 ## ✨ Funcionalidades
 
 - 🔟 **Menú interactivo** con 10 opciones para convertir entre divisas:  
-  💵 Dólar, 💶 Euro, 🇨🇴 Peso colombiano, 🇦🇷 Peso argentino, 🇧🇷 Real brasileño, 🇨🇱 Peso chileno, 🇲🇽 Peso mexicano.
+  USD Dólar, EUR Euro, COP Peso colombiano, ARS Peso argentino, BRL Real brasileño, CLP Peso chileno, MXN Peso mexicano.
 
 - 📄 **Registro automático** de cada conversión en un archivo `.json`, nombrado según la moneda base (ej. `COP.json`).
 
