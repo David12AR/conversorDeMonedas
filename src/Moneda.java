@@ -1,10 +1,9 @@
-import java.time.LocalDateTime;
 public class Moneda {
     private String base_code;
     private String target_code;
     private double conversion_result;
     private double monto;
-    private LocalDateTime horaYFecha;
+
 
     public String getBase_code() {
         return base_code;
@@ -19,12 +18,11 @@ public class Moneda {
         this.target_code = target_code;
         this.conversion_result = conversion_result;
         this.monto = monto;
-        this.horaYFecha = LocalDateTime.now();
     }
     @Override
     public String toString() {
         return "El valor " + monto + " [" + base_code + "] corresponde al valor final de =>>> " +
-                conversion_result + " [" + target_code + "]"+ "la fecha de conversión es"+"["+horaYFecha+"]";
+                conversion_result + " [" + target_code + "]";
     }
 }
 
